@@ -3,7 +3,7 @@
  * Copyright(c) https://consensys.net/
  * MIT Licensed
  */
-import { availableChains, getChainName } from './availableChains.js';
+import { availableChains } from './availableChains.js';
 import Signer from '../Signer/Signer.js';
 import Provider from '../Provider/Provider.js';
 import { isValidString, formatRpcUrl } from '../utils.js';
@@ -79,7 +79,7 @@ export default class Auth {
     this.#rpcUrl = rpcUrl;
 
     if (!isValidString(this.#rpcUrl)) {
-      this.#rpcUrl = formatRpcUrl({ chainName: getChainName(chainId), projectId: this.#projectId });
+      this.#rpcUrl = formatRpcUrl({ chainId, projectId: this.#projectId });
     }
 
     this.setProvider(provider);

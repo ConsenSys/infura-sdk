@@ -1,3 +1,5 @@
+import { chainUrls } from './Auth/availableChains.js';
+
 /* eslint-disable */
 export const isBoolean = val =>
   typeof val === 'boolean' ||
@@ -10,5 +12,6 @@ export const isDefined = variable => variable !== undefined && variable !== null
 
 export const isURI = URI => !!URI.match(/^(ipfs|http|https):\/\//gi);
 
-export const formatRpcUrl = ({ chainName, projectId }) =>
-  `https://${chainName}.infura.io/v3/${projectId}`;
+export const formatRpcUrl = ({ chainId, projectId }) => {
+  return `${chainUrls[chainId]}/v3/${projectId}`;
+};
