@@ -39,6 +39,7 @@ export const ERROR_MESSAGE = {
   approvalStatus_must_be_boolean: 'approvalStatus must be boolean.',
   only_privateKey_or_provider_required: 'Only privateKey or provider required',
   chain_not_supported: 'Chain not supported.',
+  an_error_occured: 'An error occured',
 };
 
 export const ERROR_LOCATION = {
@@ -51,4 +52,22 @@ export const ERROR_LOCATION = {
   SDK_getTokenMetadata: '[SDK.getTokenMetadata]',
   SDK_getStatus: '[SDK.GetStatus]',
   Auth_constructor: '[Auth.constructor]',
+  ERC721Mintable_deploy: '[ERC721Mintable.deploy]',
+  ERC721Mintable_setRoyalties: '[ERC721Mintable.setRoyalties]',
+  ERC721Mintable_royaltyInfo: '[ERC721Mintable.royaltyInfo]',
+  ERC721Mintable_mint: '[ERC721Mintable.mint]',
+  ERC721Mintable_addMinter: '[ERC721Mintable.addMinter]',
+  ERC721Mintable_renounceMinter: '[ERC721Mintable.renounceMinter]',
+  ERC721Mintable_removeMinter: '[ERC721Mintable.removeMinter]',
+  ERC721Mintable_isMinter: '[ERC721Mintable.isMinter]',
+  ERC721Mintable_loadContract: '[ERC721Mintable.loadContract]',
+  ERC721Mintable_transfer: '[ERC721Mintable.transfer]',
+  ERC721Mintable_setContractURI: '[ERC721Mintable.setContractURI]',
+  ERC721Mintable_addAdmin: '[ERC721Mintable.addAdmin]',
+  ERC721Mintable_removeAdmin: '[ERC721Mintable.removeAdmin]',
+  ERC721Mintable_renounceAdmin: '[ERC721Mintable.renounceAdmin]',
+  ERC721Mintable_isAdmin: '[ERC721Mintable.isAdmin]',
+  ERC721Mintable_setApprovalForAll: '[ERC721Mintable.setApprovalForAll]',
+  ERC721Mintable_approveTransfer: '[ERC721Mintable.approveTransfer]',
+  ERC721Mintable_renounceOwnership: '[ERC721Mintable.renounceOwnership]',
 };
